@@ -15,14 +15,17 @@ answers = ["Yes ", "NO ", "Maybe ", "Definitely ", "Possibly ", "Absolutely Not"
 num = random.random() #decimal 0-1
 num = num * 1000 #decimal 0-999
 num = int(num) #no more decimals
-num = num % 20 #0-19
+num = num % 6 #0-19
+#things is the length of questions
+#things = len(answers)
+#num = num % things
+print(random.choice(answers))
+
 
 question = input("Ask me a question: ")
 print(answers[num])
 
-print(answers[0])
-print(answers[1])
-print(answers[2])
+
 
 if __name__ == '__main__':
   main()
